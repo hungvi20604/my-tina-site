@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Phim Hành Động - Phim 24H</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="icon"
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTazngaJyEnLqgIFV8EJO7_Zn-3SvTxSSu5cH-Hy37iG-HdPJbsvmPuu_VR-9jTN1DGGmc&usqp=CAU">
+    <link rel="stylesheet" href="css/type_of_film.css">
+    <link rel="stylesheet" href="css/home_page.css">
+</head>
+
+<body>
+    <div class="main">
+        <button onclick="topFunction()" id="myBtn" title="Go to top"><i class="fa fa-angle-double-up"></i></button>
+        <script src="js/scroll.js"></script>
+        <div class="hearder">
+            <a href="index.html"><img id="logo" src="image/logo.png" alt=""></a>
+            <div class="find">
+                <input type="text" name="" id="" placeholder="Tìm Kiếm">
+                <a href=""><i class="fa fa-search"></i></a>
+            </div>
+            <div class="login">
+                <a href="login.html"><button id="login">Đăng Nhập</button></a>
+            </div>
+        </div>
+        <hr>
+        <div class="menu">
+            <div class="node" id="trangchu"><a href="index.html">Trang Chủ</a></div>
+            <div class="node" id="theloai">Thể Loại <i class="fa fa-chevron-down"></i>
+                <div id="theloai-dropdown">
+                    <table class="theloai" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td><a href="hanhdong.html">Hành Động</a></td>
+                            <td>Cổ Trang</td>
+                            <td>Chiến Tranh</td>
+                            <td>Viễn Tưởng</td>
+                        </tr>
+                        <tr>
+                            <td>Kinh Dị</td>
+                            <td>Tài Liệu</td>
+                            <td>Bí Ẩn</td>
+                            <td>Phim 18+</td>
+                        </tr>
+                        <tr>
+                            <td>Tình Cảm</td>
+                            <td>Tâm Lý</td>
+                            <td>Thể Thao</td>
+                            <td>Phiêu Lưu</td>
+                        </tr>
+                        <tr>
+                            <td>Âm Nhạc</td>
+                            <td>Gia Đình</td>
+                            <td>Hài Hước</td>
+                            <td>Hình Sự</td>
+                        </tr>
+                        <tr>
+                            <td>Võ Thuật</td>
+                            <td>Khoa Học</td>
+                            <td>Thần Thoại</td>
+                            <td>Chính Kịch</td>
+                        </tr>
+                        <tr>
+                            <td>Kinh Điển</td>
+                            <td>BL</td>
+                            <td>Bách Hợp</td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="node" id="quocgia">Quốc Gia <i class="fa fa-chevron-down"></i>
+                <div id="quocgia-dropdown">
+                    <table class="theloai" cellpadding="0" cellspacing="0">
+                        <tr>
+                            <td><a href="trungquoc.html">Trung Quốc</a></td>
+                            <td>Thái Lan</td>
+                            <td>Hồng Kông</td>
+                            <td>Hàn Quốc</td>
+                        </tr>
+                        <tr>
+                            <td>Âu Mỹ</td>
+                            <td>Ấn Độ</td>
+                            <td>Canada</td>
+                            <td>Nhật Bản</td>
+                        </tr>
+                        <tr>
+                            <td>Đài Loan</td>
+                            <td>Anh</td>
+                            <td>Nga</td>
+                            <td>Ý</td>
+                        </tr>
+                        <tr>
+                            <td>QG Khác</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            <div class="node" id="phimmoi"><a href="phimmoi.html">Phim Mới</a></div>
+            <div class="node" id="phimbo"><a href="phimbo.html">Phim Bộ</a></div>
+            <div class="node" id="phimle"><a href="phimle.html">Phim Lẻ</a></div>
+            <div class="node" id="phimrap"><a href="phimchieurap.html">Chiếu Rạp</a></div>
+        </div>
+        <div class="link">
+            <i class="fa fa-home"></i> Trang Chủ <i class="fa fa-chevron-right"></i> Phim Hành Động
+        </div>
+        <hr>
+        <h3 id="top">PHIM HÀNH ĐỘNG</h3>
+        <div class="content">
+            <hr>
+            <div class="find_film">
+                <select name="latest" class="categorize" id="latest">
+                    <option value="">Mới Cập Nhật</option>
+                    <option value="">Lượt Xem</option>
+                    <option value="">Năm Sản Xuất</option>
+                </select>
+                <select name="theloai" class="categorize" id="theloai">
+                    <option value="">Thể Loại</option>
+                    <option value="">Hành Động</option>
+                    <option value="">Cổ Trang</option>
+                    <option value="">Chiến Tranh</option>
+                    <option value="">Viễn Tưởng</option>
+                    <option value="">Kinh Dị</option>
+                    <option value="">Tài Liệu</option>
+                    <option value="">Bí Ẩn</option>
+                    <option value="">Phim 18+</option>
+                    <option value="">Tình Cảm</option>
+                    <option value="">Tâm Lý</option>
+                    <option value="">Thể Thao</option>
+                    <option value="">Phiêu Lưu</option>
+                    <option value="">Âm Nhạc</option>
+                    <option value="">Gia Đình</option>
+                    <option value="">Hài Hước</option>
+                    <option value="">Hình Sự</option>
+                    <option value="">Võ Thuật</option>
+                    <option value="">Khoa Học</option>
+                    <option value="">Thần Thoại</option>
+                    <option value="">Chính Kịch</option>
+                    <option value="">Kinh Điển</option>
+                    <option value="">BL</option>
+                    <option value="">Bách Hợp</option>
+                </select>
+                <br>
+                <select name="country" class="categorize" id="country">
+                    <option value="">Quốc Gia</option>
+                    <option value="">Trung Quốc</option>
+                    <option value="">Thái Lan</option>
+                    <option value="">Hồng Kông</option>
+                    <option value="">Hàn Quốc</option>
+                    <option value="">Âu Mỹ</option>
+                    <option value="">Ấn Độ</option>
+                    <option value="">Canada</option>
+                    <option value="">Nhật Bản</option>
+                    <option value="">Đài Loan</option>
+                    <option value="">Anh</option>
+                    <option value="">Nga</option>
+                    <option value="">Ý</option>
+                    <option value="">QG Khác</option>
+                </select>
+                <select name="phim" class="categorize" id="phim">
+                    <option value="">Phim Bộ</option>
+                    <option value="">Phim Lẻ</option>
+                    <option value="">TV Show</option>
+                    <option value="">Hoạt Hình</option>
+                </select>
+                <br>
+                <select name="year" class="categorize" id="year">
+                    <option value="">Năm Sản Xuất</option>
+                    <option value="">2024</option>
+                    <option value="">2023</option>
+                    <option value="">2022</option>
+                    <option value="">2021</option>
+                    <option value="">2020</option>
+                    <option value="">2019</option>
+                    <option value="">2018</option>
+                    <option value="">2017</option>
+                    <option value="">2016</option>
+                    <option value="">2015</option>
+                    <option value="">2014</option>
+                </select>
+                <input style="width: 300px;" class="categorize" type="text" placeholder="Từ Khóa...">
+                <br>
+            </div>
+            <button id="search">Tìm Kiếm</button>
+            <hr>
+            <div style="display: flex; flex-wrap: wrap;">
+                <a href="click_film_knuckles.html">
+                    <div class="first-film">
+                        <img src="image/knuckles-x500.webp" alt="">
+                        <p id="vi">KNUCKLES</p>
+                        <p id="en"> Knuckles (2024)</p>
+                        <h3>Full - Vietsub</h3>
+                    </div>
+                </a>
+                <div class="first-film">
+                    <a href="click_film_godzilaa.html">
+                        <img src="image/godzilla-x-kong-de-che-moi-x500.webp" alt="">
+                        <p id="vi">GODZILLA X KONG: ĐẾ CHẾ MỚI</p>
+                        <p id="en">Godzilla X Kong: The New Empire (2024)</p>
+                        <h3>Full - Vietsub</h3>
+                    </a>
+                </div>
+                <div class="first-film">
+                    <img src="image/nguoi-tinh-sat-thu-2024-x350.webp" alt="">
+                    <p id="vi">Người Tình Sát Thủ</p>
+                    <p id="en">Lien Li Assassin</p>
+                    <h3>Tập 10 - Vietsub</h3>
+                </div>
+                <div class="first-film">
+                    <img src="image/crash-x500.webp" alt="">
+                    <p id="vi">TAI NẠN</p>
+                    <p id="en">Crash (2024)</p>
+                    <h3>Tập 3 - Vietsub</h3>
+                </div>
+                <div class="first-film">
+                    <img src="image/biet-doi-san-rong-x500.webp" alt="">
+                    <p id="vi">BIỆT ĐỘI SĂN RỒNG</p>
+                    <p id="en">Slyth: The Hunt Saga (2023)</p>
+                    <h3>Full Vietsub</h3>
+                </div>
+                <div class="first-film">
+                    <img src="image/khong-the-noi-ra-x350.webp" alt="">
+                    <p id="vi">Không Thể Nói Ra</p>
+                    <p id="en">Tell No One</p>
+                    <h3>Tập 4 - Vietsub</h3>
+                </div>
+                <div class="first-film">
+                    <img src="image/cap-nhi-tan-1944-x350.webp" alt="">
+                    <p id="vi">Cáp Nhĩ Tân</p>
+                    <p id="en">In the Name of the Brother</p>
+                    <h3>Tập 36 - Vietsub</h3>
+                </div>
+                <div class="first-film">
+                    <img src="image/the-chat-100-phan-2-x500.webp" alt="">
+                    <p id="vi">THỂ CHẤT: 100 (PHẦN 2)</p>
+                    <p id="en">Physical: 100 Season 2 - Underground (2024)</p>
+                    <h3>Tập 8 - Vietsub</h3>
+                </div>
+                <div class="first-film">
+                    <img src="image/nguoi-chay-xuyen-khong-gian-x350.webp" alt="">
+                    <p id="vi">Người Chạy Xuyên Không Gian</p>
+                    <p id="en">Dark Matter</p>
+                    <h3>Tập 2 - Vietsub</h3>
+                </div>
+                <div class="first-film">
+                    <img src="image/rebel-moon-phan-hai-ke-khac-vet-seo-x500.webp" alt="">
+                    <p id="vi">
+                        REBEL MOON – PHẦN HAI: KẺ KHẮC VẾT SẸO</p>
+                    <p id="en">Rebel Moon - Part Two: The Scargiver (2024)</p>
+                    <h3>Full - Vietsub</h3>
+                </div>
+                <div class="slide">
+                    <img src="image/cuoc-chien-sinh-ton-phan-2-hoi-sinh-x350.webp" alt="">
+                    <p id="vi">Cuộc Chiến Sinh Tồn</p>
+                    <p id="en">2024</p>
+                    <h3>Tập 12 - Vietsub</h3>
+                    <span>Trending</span>
+                </div>
+                <div class="first-film">
+                    <img src="image/vi-am-chi-hoa-x350.webp" alt="">
+                    <p id="vi">Vi Ám Chi Hỏa</p>
+                    <p id="en">Tender Light</p>
+                    <h3>Tập 24 - Vietsub</h3>
+                </div>
+                <div class="first-film">
+                    <img src="image/qua-nhanh-qua-nguy-hiem-10-x500.webp" alt="">
+                    <p id="vi">QUÁ NHANH QUÁ NGUY HIỂM 10</p>
+                    <p id="en">Fast & Furious X (2023)</p>
+                    <h3>Tập 19 - Vietsub</h3>
+                </div>
+                <div class="first-film">
+                    <img src="image/chu-cong-phuc-yeu-x500.webp" alt="">
+                    <p id="vi">CHU CÔNG PHỤC YÊU</p>
+                    <p id="en"> Zhou Gong Subdues Demons (2024)</p>
+                    <h3>Full - Vietsub</h3>
+                </div>
+                <div class="first-film">
+                    <img src="image/truyen-thuyet-thanh-pho-bi-an-x500.webp" alt="">
+                    <p id="vi">TRUYỀN THUYẾT THÀNH PHỐ BÍ ẨN</p>
+                    <p id="en">Legend of the Hidden Land (2024)</p>
+                    <h3>Tập 22 - Vietsub</h3>
+                </div>
+                <div class="first-film">
+                    <img src="image/tai-sinh-2024-x350.webp" alt="">
+                    <p id="vi">Tái Sinh</p>
+                    <p id="en">Regeneration</p>
+                    <h3>Tập 5 - Vietsub</h3>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar">
+            <h3>HÀNH ĐỘNG HOT</h3>
+            <div class="film">
+                <img src="image/the-8-show-x350.webp" alt="">
+                <div class="film-of">
+                    <p id="name">The 8 Show</p>
+                    <p>2024</p>
+                    <p id="vote"><i class="fa fa-star"></i> 8.5</p>
+                </div>
+            </div>
+            <div class="film">
+                <img src="image/uncle-samsik-x350.webp" alt="">
+                <div class="film-of">
+                    <p id="name">Uncle Samsik</p>
+                    <p>2024</p>
+                    <p id="vote"><i class="fa fa-star"></i> 5</p>
+                </div>
+            </div>
+            <div class="film">
+                <img src="image/lieu-diep-trich-tinh-than-x350.webp" alt="">
+                <div class="film-of">
+                    <p id="name">LIỄU DIỆP TRÍCH TINH THẦN</p>
+                    <p>2024</p>
+                    <p id="vote"><i class="fa fa-star"></i> 7.1</p>
+                </div>
+            </div>
+            <div class="film">
+                <img src="image/begins-youth-x350.webp" alt="">
+                <div class="film-of">
+                    <p id="name">Begins Youth</p>
+                    <p>2024</p>
+                    <p id="vote"><i class="fa fa-star"></i> 6.2</p>
+                </div>
+            </div>
+            <div class="film">
+                <img src="image/dare-to-love-me-x350.webp" alt="">
+                <div class="film-of">
+                    <p id="name">Dare To Love Me</p>
+                    <p>2024</p>
+                    <p id="vote"><i class="fa fa-star"></i> 7.4</p>
+                </div>
+            </div>
+            <div class="film">
+                <img src="image/connection-x350.webp" alt="">
+                <div class="film-of">
+                    <p id="name">Connection</p>
+                    <p>2024</p>
+                    <p id="vote"><i class="fa fa-star"></i> 7</p>
+                </div>
+            </div>
+            <div class="film">
+                <img src="image/cam-tu-an-ninh-x350.webp" alt="">
+                <div class="film-of">
+                    <p id="name">Cẩm Tú An Ninh</p>
+                    <p>2024</p>
+                    <p id="vote"><i class="fa fa-star"></i> 8.5</p>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="footer">
+            <div id="diff">
+                <a href="index.html"><img id="logo" src="image/logo.png" alt=""></a>
+                <p><b style="color: orange;">Phim 24H</b> - Trang web xem phim trực tuyến miễn phí chất lượng cao
+                    với
+                    giao diện trực quan, tốc độ tải
+                    trang nhanh, cùng kho phim với hơn 10.000+ phim mới, phim hay, luôn cập nhật phim nhanh, hứa hẹn
+                    sẽ
+                    đem lại phút giây thư giãn cho bạn.</p>
+            </div>
+            <div>
+                <ul><span>DANH MỤC</span>
+                    <li><a href="phimmoi.html">Phim Mới</a></li>
+                    <li><a href="phimchieurap.html">Phim Chiếu Rạp</a></li>
+                    <li><a href="phimbo.html">Phim Bộ</a></li>
+                    <li><a href="phimle.html">Phim Lẻ</a></li>
+                </ul>
+            </div>
+            <div>
+                <ul><span>THỂ LOẠI</span>
+                    <li>Phim Cổ Trang</li>
+                    <li>Phim Đam Mỹ</li>
+                    <li>Phim Bách Hợp</li>
+                    <li>Phim Viễn Tưởng</li>
+                </ul>
+            </div>
+            <div>
+                <ul><span>ĐIỀU KHOẢN</span>
+                    <li>DMCA</li>
+                    <li><a href="contact.html">Liên Hệ</a></li>
+
+                    <li>Privacy</li>
+                    <li>Terms of Service</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+        <div id="footer">
+            <p>© 2024 Phim 24H. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+
+</html>
