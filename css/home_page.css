@@ -1,0 +1,520 @@
+body {
+    background-color: rgba(0, 0, 0, 0.750);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 210px;
+    z-index: 99;
+    font-size: 18px;
+    border: none;
+    background-color: orange;
+    color: white;
+    cursor: pointer;
+    padding: 10px 18px;
+    border-radius: 4px;
+}
+
+#myBtn:hover {
+    background-color: grey;
+}
+
+#slider-container {
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    padding: 10px 25px;
+    clear: both;
+}
+
+#slider-container .btn {
+    position: absolute;
+    top: 50%;
+    height: 25px;
+    width: 25px;
+    border-left: 8px solid #696969;
+    border-top: 8px solid #696969;
+    cursor: pointer;
+    z-index: 1;
+}
+
+#slider-container .btn.inactive {
+    border-color: #282828
+}
+
+#slider-container .btn:first-of-type {
+    transform: rotate(-45deg);
+    left: 10px
+}
+
+#slider-container .btn:last-of-type {
+    transform: rotate(135deg);
+    right: 10px;
+}
+
+#slider-container #slider {
+    display: flex;
+    height: 100%;
+    transition: all .5s;
+}
+.slide {
+    width: 200px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    background-color: #3f3f463d;
+    margin:0px 10px 0 10px;
+    cursor: pointer;
+}
+.slide img {
+    width: 200px;
+    border-radius: 10px;
+    position: relative;
+    height: 330px;
+    opacity: 0.5;
+}
+.slide img:hover {
+    opacity: 0.8;
+}
+.slide:hover {
+    transform: scale(1.02, 1.02);
+    transition: .5s;
+    background-color: #3f3f46;
+}
+.slide #vi {
+    width: 180px;
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+}
+.slide #en {
+    position: absolute;
+    bottom: 0PX;
+    left: 10px;
+    color: #ffffff;
+    font-size: 20px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.slide h3 {
+    position: absolute;
+    top: 40px;
+    left: 0;
+    font-size: 18px;
+    background-color: orange;
+    border-radius: 0 10px 10px 0;
+    margin: 0;
+    padding-right: 5px;
+}
+.slide span {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: peru;
+    border-radius: 0px 0 0 10px;
+    font-size: 20px;
+}
+.main {
+    width: 1150px;
+    margin: auto;
+    border: 1px solid black;
+    background-color: #151414;
+    color: white;
+}
+
+#logo {
+    width: 180px; 
+    height: 70px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.hearder {
+    display: flex;
+}
+
+.hearder img {
+    background: #202020;
+    margin: 20px 43px;
+    border-radius: 10px;
+}
+
+.find {
+    padding: 20px 80px;
+    color: white;
+    position: relative;
+}
+
+.find input {
+    height: 60px;
+    background-color: #18181b;
+    border-radius: 10px;
+    width: 440px;
+    border: 1px solid rgba(255, 255, 255, 0.134);
+    padding: 5px 10px;
+    color: white;
+    font-size: 20px;
+}
+
+.find i {
+    position: absolute;
+    top: 35px;
+    right: 100px;
+    background-color: transparent;
+    border: none;
+    color: white;
+    font-size: 30px;
+}
+
+.login {
+    padding: 20px 50px;
+}
+
+.login #login {
+    padding: 15px 35px;
+    background-color: #3f3f46;
+    border: none;
+    color: white;
+    border-radius: 15px;
+    cursor: pointer;
+    font-size: 20px;
+}
+
+.login #login:hover {
+    background-color: #3f3f4675;
+}
+
+.menu {
+    display: flex;
+    color: white;
+    font-size: 23px;
+}
+
+.menu .node {
+    margin: 22px;
+    cursor: pointer;
+}
+
+.menu .node:hover {
+    color: orange;
+}
+
+hr {
+    width: 95%;
+    margin: auto;
+    border: 0;
+    border-top: 1px solid rgba(128, 128, 128, 0.45);
+}
+
+#theloai {
+    position: relative;
+}
+
+#theloai-dropdown {
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: -38px;
+    color: white;
+    padding: 20px 0px;
+    width: max-content;
+    opacity: 0;
+    transition: all .2s linear;
+}
+
+#theloai:hover #theloai-dropdown {
+    display: block;
+    z-index: 1;
+    background-color: #151414;
+}
+
+#theloai-dropdown:hover {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+#quocgia {
+    position: relative;
+}
+
+#quocgia-dropdown {
+    display: none;
+    position: absolute;
+    top: 35px;
+    left: -38px;
+    color: white;
+    padding: 20px 0px;
+    width: max-content;    
+    opacity: 0;
+    transition: all .2s linear;
+}
+
+#quocgia:hover #quocgia-dropdown {
+    display: block;
+    z-index: 1;
+    background-color: #151414;
+}
+
+#quocgia-dropdown:hover {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.theloai tr td {
+    padding: 15px 40px;
+    background-color: #000000;
+    
+}
+
+.theloai tr td:hover {
+    color: orange;
+    background-color: #151414af;
+}
+
+.banner h3 {
+    float: left;
+}
+
+.content {
+    float: left;
+    width: 850px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+.first-film {
+    width: 180px;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    background-color: #3f3f463d;
+    margin:20px 0 0 20px;
+    cursor: pointer;
+}
+.first-film img {
+    width: 180px;
+    border-radius: 10px;
+    height: 260px;
+}
+.first-film:hover {
+    transform: scale(1.01, 1.02);
+    transition: .2s;
+    background-color: #3f3f46;
+}
+.first-film #vi {
+    font-size: 15px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 80%;
+    margin: 5px auto;
+}
+.first-film #en {
+    color: #868690;
+    font-size: 18px;
+    margin: 5px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.first-film h3 {
+    position: absolute;
+    top: 10px;
+    left: 0;
+    font-size: 18px;
+    background-color: orange;
+    border-radius: 0 10px 10px 0;
+    margin: 0;
+    padding-right: 5px;
+}
+.sidebar {
+    float: right;
+    width: 290px;
+    margin-bottom: 20px;
+}
+
+h3 {
+    border-left: orange 4px solid;
+    padding:0 10px;
+    margin-left: 30px;
+    margin-left: 10px;
+    font-weight: 600;
+    text-align: left;
+}
+#xemthem {
+    background-color: orange;
+    border-radius: 10px;
+    padding: 10px;
+    font-weight: bold;
+    color: white;
+    cursor: pointer;
+    margin: 20px;
+    border: none;
+}
+#xemthem:hover {
+    background-color: rgb(255, 166, 0);
+    box-shadow:0px 0px 8px  white;
+    border: none;
+}
+
+.pages {
+    margin-top: 20px;
+}
+
+.page {
+    width: 35px;
+    height: 35px;
+    border-radius: 7px;
+    border: none;
+    background-color: #414144;
+    color: white;
+    font-size: 12px;
+}
+
+.page:hover {
+    background-color: #151414;
+    border: 1px solid grey;
+    cursor: pointer;
+}
+
+.part {
+    margin: 20px;
+    cursor: pointer;
+}
+.part:hover {
+    background-color:#3f3f46;
+}
+.part #number {
+    float: left;
+    margin: 3px;
+    padding: 10px 17px;
+    background-color: orange;
+    border-radius: 30px;
+    width: max-content;
+    margin-right: 10px;
+}
+
+#part-of #name {
+    font-size: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    width: 180px;
+    margin: 0;
+}
+#part-of #view {
+    color: grey;
+}
+.year {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    max-height: fit-content;
+}
+.year div{
+    background-color: #3f3f46;
+    padding: 8px;
+    cursor: pointer;
+    margin: 5px;
+    width: fit-content;
+}
+.year div:hover {
+    background-color: #2f262650;
+}
+
+.film {
+    border: 1px solid rgba(128, 128, 128, 0.148);
+    padding: 10px;
+    height: 145px;
+    width: 280px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.film:hover {
+    transform: scale(1.05, 1.05);
+    transition: .2s;
+}
+.film img {
+    width: 70px;
+    border-radius: 10px;
+    float: left;
+}
+.film-of p{
+    margin: 5px;
+}
+.film-of {
+    float: right;
+    width: 180px;
+}
+.film-of #vote {
+    margin-top: 20px;
+}
+.film-of #name {
+    font-size: 10px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+
+}
+
+.footer {
+    height: 400px;
+    width: 95%;
+    background-color: #000000;
+    margin: auto;
+    color: white;
+    display: flex;
+}
+.footer #diff {
+    width: 270px;
+    margin: auto;
+    text-align: justify;
+}
+
+.footer div {
+    width: 200px;
+    margin: auto;
+}
+.footer span {
+    font-size: 20px;
+    margin: 20px 0px;   
+}
+.footer ul li {
+    font-size: 17px;
+    padding: 10px 0;
+    list-style-type: none;
+    color:grey;
+}
+.footer ul li:hover {
+    cursor: pointer;
+    color: orange;
+}
+#footer {
+    height: 70px;
+    background-color: #000000;
+    width: 95%;
+    margin: auto;
+    color: grey;
+    text-align: center;
+    margin-bottom: 20px ;
+}
+#footer p {
+    margin: 0;
+    padding: 20px;
+    font-size: 20px;
+}
+a {
+    text-decoration: none;
+}
